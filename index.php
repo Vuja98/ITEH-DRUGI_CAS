@@ -8,7 +8,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     $upass = $_POST['password'];
 
     
-
+    //$conn = new mysqli() ! uradjeno preko dbBrokera
     $korisnik = new User(1, $uname, $upass);
     $odg = User:: logInUser($korisnik, $conn);
 
